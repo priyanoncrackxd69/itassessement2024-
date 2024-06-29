@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanji's Baratie Cafe Contact Us</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+        .links a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+        .links a:hover {
+            color: #FF4500;
+        }
+        .external-links img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .image-center {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let isValid = true;
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (name == "") {
+                document.getElementById('nameError').innerHTML = "Name is required";
+                isValid = false;
+            } else {
+                document.getElementById('nameError').innerHTML = "";
+            }
+
+            if (email == "") {
+                document.getElementById('emailError').innerHTML = "Email is required";
+                isValid = false;
+            } else if (!email.match(emailPattern)) {
+                document.getElementById('emailError').innerHTML = "Invalid email format";
+                isValid = false;
+            } else {
+                document.getElementById('emailError').innerHTML = "";
+            }
+
+            if (message == "") {
+                document.getElementById('messageError').innerHTML = "Message is required";
+                isValid = false;
+            } else {
+                document.getElementById('messageError').innerHTML = "";
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Sanji's Baratie Cafe
+            <br>
+            <img src="opSeaa.gif" alt="Strawhat" height="50" width="105" hspace="5" vspace="0">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Our Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="purchase.html">Purchase</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="op food.jpg">
+        <h1 style="text-align: center;">Contact Us</h1>
+
+        <div class="contact-form">
+            <form onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <div id="nameError" class="error"></div>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"placeholder="Enter your email">
+                <div id="emailError" class="error"></div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <div id="messageError" class="error"></div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="links">
+            <h2 style="text-align: center;">Email Us</h2>
+            <h3 style="text-align: center;">If you have any questions, feel free to email us at <a href="mailto:info@sanji.com">info@sanji.com</a></h3>
+        </div>
+        <div class="external-links">
+            <h2 style="text-align: center;">Sites you would like to Visit</h2>
+            <div class="image-center">
+                <a href="https://one-piece.com/index.html" target="_blank">
+                    <img src="onepiece_logo.png" alt="One Piece">
+                </a>
+                <a href="https://www.foodnetwork.com/" target="_blank">
+                    <img src="foodnetwork_logo.png" alt="Food Network">
+                </a>
+            </div>
+            <h2 style="text-align: center;">Check out this cool site: <a href="http://example.com" target="_blank">Example Site</a></h2>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About</h2>
+                <p>Welcome to the Baratie, where the seas meet the tastiest eats! This is a dream by yours truly, Sanji! We serve up delicious dishes from all over the world, guaranteed to tantalize any taste bud that crosses our plank. We've got something for everyone, just don't you dare waste a single bite!</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h2>More Info</h2>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <a href="#"><img src="facebooklogo.jpeg" alt="Facebook logo" width="100" height="30"></a>
+                <br>
+                <a href="#"><img src="youtube.jpg" alt="YouTube logo" height="50" width="300"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanji's Baratie Cafe Menu</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .menu-section {
+            margin-top: 20px;
+        }
+        .purchase-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+        }
+        .menu-item img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Skypiea's Cafe
+            <br>
+            <img src="opSeaa.gif" alt="Strawhat" height="50" width="105" hspace="5" vspace="0">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Our Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="purchase.html">Purchase</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Our Menu</h1>
+        <table>
+            <tr>
+                <th colspan="2">Breakfast</th>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="pancakes-01.jpg" alt="Skypiea Pancakes" width="50" height="50">Skypiea Pancakes</td> 
+                <td>$8.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="eggs.jpg" alt="Sunny Side Up Eggs" width="50" height="50">Sunny Side Up Eggs</td>
+                <td>$6.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="fruitandyog.jpg" alt="Fruit Parfait" width="50" height="50">Fruit Parfait</td>
+                <td>$5.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="french toast.jpeg" alt="French Toast" width="50" height="50">French Toast</td>
+                <td>$7.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+        </table>
+        
+        <table class="menu-section">
+            <tr>
+                <th colspan="2">Lunch</th>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="grilled chicken.jpg" alt="Grilled Chicken Sandwich" width="50" height="50">Grilled Chicken Sandwich</td>
+                <td>$10.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="veggie wrap.jpg" alt="Veggie Wrap" width="50" height="50">Veggie Wrap</td>
+                <td>$9.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="caeser salad.jpg" alt="Caesar Salad" width="50" height="50">Caesar Salad</td>
+                <td>$8.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="tomato-soup-recipe.jpg" alt="Tomato Soup" width="50" height="50">Tomato Soup</td>
+                <td>$4.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+        </table>
+        
+        <table class="menu-section">
+            <tr>
+                <th colspan="2">Dinner</th>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="Steak_frites.jpg" alt="Steak Frites" width="50" height="50">Steak Frites</td>
+                <td>$18.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="salmon.jpg" alt="Salmon Fillet" width="50" height="50">Salmon Fillet</td>
+                <td>$17.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="spagheti.jpg" alt="Spaghetti Bolognese" width="50" height="50">Spaghetti Bolognese</td>
+                <td>$14.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="vegetarian-lasagna-scaled.jpg" alt="Vegetarian Lasagna" width="50" height="50">Vegetarian Lasagna</td>
+                <td>$13.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+        </table>
+        
+        <table class="menu-section">
+            <tr>
+                <th colspan="2">Beverages</th>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="espresso.jpeg" alt="Espresso" width="50" height="50">Espresso</td>
+                <td>$2.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="latte.jpg" alt="Latte" width="50" height="50">Latte</td>
+                <td>$3.99 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="green tea.jpg" alt="Green Tea" width="50" height="50">Green Tea</td>
+                <td>$2.49 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+            <tr>
+                <td class="menu-item"><img src="orange juice.jpg" alt="Fresh Orange Juice" width="50" height="50">Orange Juice</td>
+                <td>$3.49 <button class="purchase-button" onclick="location.href='purchase.html'">Purchase</button></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About</h2>
+                <p>Welcome to the Baratie, where the seas meet the tastiest eats! This is a dream by yours truly, Sanji! We serve up delicious dishes from all over the world, guaranteed to tantalize any taste bud that crosses our plank. We've got something for everyone, just don't you dare waste a single bite!</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h2>More Info</h2>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <a href="#"><img src="facebooklogo.jpeg" alt="Facebook logo" width="100" height="30"></a>
+                <br>
+                <a href="#"><img src="youtube.jpg" alt="YouTube logo" height="50" width="300"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
